@@ -21,8 +21,8 @@ git push -u origin main
    - **Name:** `working-days-api` (o el nombre que prefieras)
    - **Environment:** `Node`
    - **Node Version:** `20.19.4` (especifica la versión exacta)
-   - **Build Command:** `npm install && npm run build && mv dist src/`
-   - **Start Command:** `node src/dist/index.js`
+   - **Build Command:** `npm install && npm run build`
+   - **Start Command:** `cd src && node ../dist/index.js`
    - **Plan:** `Free`
 
 ### 3. **Variables de entorno (opcional):**
@@ -41,8 +41,8 @@ Una vez desplegado, deberías poder acceder a:
 ### Error: "Cannot find module '/opt/render/project/src/dist/index.js'"
 - **Problema:** Render está buscando el archivo en una ruta incorrecta
 - **Solución:** Asegúrate de que:
-  - Build Command sea: `npm install && npm run build && mv dist src/`
-  - Start Command sea: `node src/dist/index.js`
+  - Build Command sea: `npm install && npm run build`
+  - Start Command sea: `cd src && node ../dist/index.js`
   - El archivo `render.yaml` esté presente en la raíz del proyecto
 
 ### Error: "Build failed"

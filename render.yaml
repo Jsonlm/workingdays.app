@@ -4,8 +4,8 @@ services:
     env: node
     plan: free
     nodeVersion: 20.19.4
-    buildCommand: npm install && npm run build && mv dist src/
-    startCommand: node src/dist/index.js
+    buildCommand: npm install && npm run build
+    startCommand: cd src && node ../dist/index.js
     envVars:
       - key: NODE_ENV
         value: production
