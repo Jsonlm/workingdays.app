@@ -22,7 +22,7 @@ git push -u origin main
    - **Environment:** `Node`
    - **Node Version:** `20.19.4` (especifica la versión exacta)
    - **Build Command:** `npm install && npm run build`
-   - **Start Command:** `npm start`
+   - **Start Command:** `node dist/index.js`
    - **Plan:** `Free`
 
 ### 3. **Variables de entorno (opcional):**
@@ -42,7 +42,7 @@ Una vez desplegado, deberías poder acceder a:
 - **Problema:** Render está buscando el archivo en una ruta incorrecta
 - **Solución:** Asegúrate de que:
   - Build Command sea: `npm install && npm run build`
-  - Start Command sea: `npm start`
+  - Start Command sea: `node dist/index.js`
   - El archivo `render.yaml` esté presente en la raíz del proyecto
 
 ### Error: "Build failed"
