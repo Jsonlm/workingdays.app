@@ -5,7 +5,7 @@ services:
     plan: free
     nodeVersion: 20.19.4
     buildCommand: npm install && npm run build
-    startCommand: cd /dist && node index.js
+    startCommand: pwd && node index.js
     envVars:
       - key: NODE_ENV
         value: production
